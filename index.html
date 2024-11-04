@@ -65,17 +65,16 @@
             margin-bottom: 20px;
         }
 
-        button {
+        input.button {
             padding: 10px 20px;
             font-size: 1em;
             cursor: pointer;
             border: none;
             border-radius: 5px;
-            background-color: #007BFF;
+            background-color: rgb(18, 90, 18);;
             color: white;
         }
-
-        button:hover {
+        .button:hover {
             background-color: #0056b3;
         }
 
@@ -107,6 +106,11 @@
             margin-bottom: 5 0px;
             text-shadow: 1px 1px 5px rgba(255, 255, 240, 0.7), 0 0 10px rgba(255, 255, 240, 0.5);;
         }
+        .para{
+            color: rgb(113, 28, 28);
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+        }
 
     </style>
 </head>
@@ -122,13 +126,13 @@
 
         <section class="intro">
             <h2>About Us</h2>
-            <a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a>
-            <p>We are dedicated to fostering a community of developers at our university, where knowledge sharing and collaboration are key.</p>
+            <p class="para">We are dedicated to fostering a community of developers at our university, where knowledge sharing and collaboration are key.</p>
+            <input type="button" class="button" value="More About Us">
         </section>
 
         <section class="events">
             <h2>Upcoming Events</h2>
-            <ul>
+            <ul class="para">
                 <li><strong>Hackathon:</strong> March 10, 2023 | 10 AM - 6 PM | Main Hall</li>
                 <li><strong>Workshop:</strong> March 15, 2023 | 2 PM - 4 PM | Lab 101</li>
                 <li><strong>Networking Event:</strong> March 20, 2023 | 5 PM - 7 PM | Student Lounge</li>
@@ -137,8 +141,8 @@
 
         <section class="projects">
             <h2>Current Projects</h2>
-            <p>Explore our exciting projects:</p>
-            <ul>
+            <p class="para">Explore our exciting projects:</p>
+            <ul class="para">
                 <li>Project A: A web-based application for XYZ.</li>
                 <li>Project B: A mobile app for ABC.</li>
                 <li>Project C: A collaborative tool for developers.</li>
@@ -147,8 +151,8 @@
 
         <section class="resources">
             <h2>Resources</h2>
-            <p>Check out these helpful materials:</p>
-            <ul>
+            <p class="para">Check out these helpful materials:</p>
+            <ul class="para">
                 <li><a href="#">HTML & CSS Tutorial</a></li>
                 <li><a href="#">JavaScript Basics</a></li>
                 <li><a href="#">Git & GitHub Guide</a></li>
@@ -157,13 +161,13 @@
 
         <section class="members">
             <h2>Become a Member</h2>
-            <p>Join the community to enhance your skills and network.</p>
-            <button class="signup">Sign Up</button>
+            <p class="para">Join the community to enhance your skills and network.</p>
+            <input type="button" class="button" value="Sing Up">
         </section>
 
         <section class="gallery">
             <h2>Gallery</h2>
-            <p>Photos from our past events:</p>
+            <p class="para">Photos from our past events:</p>
             
             <div>
                 <img src="gallery_image_1.jpg" alt="Event 1" width="100">
@@ -176,9 +180,6 @@
     <footer>
         <p>&copy; 2023 Developer Club. All rights reserved.</p>
     </footer>
-    <script src="js/materialize.js">
-        M.toast({html: 'I am a toast!'})
-    </script>
 </body>
 
 </html>
