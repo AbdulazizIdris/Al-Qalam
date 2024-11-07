@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Club</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=   A:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.css">
-    <style>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Developer Club</title>
+       <link rel="stylesheet" href="styles.css">
+       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Satisfy:wght@400;700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=   A:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-        body {
+    body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -27,19 +29,19 @@
             background-repeat: no-repeat;
         }
 
-        main {
+    main {
             text-align: center;
             margin: 20px 0;
             color: white; 
         }
 
-        .logo img {
+    .logo img {
             width: 100px;
             border-radius: 80%;
             box-shadow: 0 0 15px 5px black;
         }
 
-        .club-name {
+    .club-name {
             font-weight: bold;
             font-size: 2.5em;
             color: brown;
@@ -52,20 +54,20 @@
             text-shadow: 1px 1px 5px rgba(255, 255, 240, 0.7), 0 0 10px rgba(255, 255, 240, 0.5);
         }
 
-        @keyframes popIn {
+    @keyframes popIn {
             to {
                 opacity: 1;
                 transform: scale(1);
             }
         }
 
-        .note {
+    .note {
             font-size: 1.2em;
             color: #eee; 
             margin-bottom: 20px;
         }
 
-        input.button {
+    input.button {
             padding: 10px 20px;
             font-size: 1em;
             cursor: pointer;
@@ -74,11 +76,11 @@
             background-color: rgb(18, 90, 18);;
             color: white;
         }
-        .button:hover {
+    .button:hover {
             background-color: #0056b3;
         }
 
-        section {
+    section {
             margin: 20px 0;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.7); 
@@ -87,7 +89,7 @@
             box-shadow: 0 4px 15px rgba(173, 132, 132, 0.5);
         }
 
-        footer {
+    footer {
             width: 100%;
             text-align: center;
             padding: 10px 0;
@@ -96,57 +98,126 @@
             position: relative;
             bottom: 0;
         }
-        h2{
+    h2{
             font-family:'Satisfy', sans-serif;
             color:rgb(18, 90, 18);
+            margin-bottom: 0;
         }
-        .note{
+    .note{
             font-family: Oswald;
             color: black;
             margin-bottom: 5 0px;
             text-shadow: 1px 1px 5px rgba(255, 255, 240, 0.7), 0 0 10px rgba(255, 255, 240, 0.5);;
         }
-        .para{
+    .para{
             color: rgb(113, 28, 28);
             font-family: 'Nunito', sans-serif;
-            font-weight: bold;
+            font-weight: bold;         
         }
+    .sections-container {
+         display: flex;
+         flex-wrap: wrap; 
+         justify-content: space-between; 
+         }
 
+    section {
+          flex:  1 1 calc(50% - 40px); 
+          margin: 20px; 
+          padding: 20px;
+          background-color: rgba(184, 147, 121, 0.9);
+          border-radius: 10px;
+          box-shadow: 0 4px 15px rgba(173, 132, 132, 0.5);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          }
+    .note {
+         font-size: 1.2em;
+         color:rgba(18, 9, 68, 0.9); 
+         margin-bottom: 20px;
+         animation: slideInFromRight 1.5s forwards;
+         }
+
+    @keyframes  slideInFromRight  {
+         0% {
+         transform: translateX(100%); 
+         opacity: 0; 
+         }
+         100% {
+         transform: translateX(0); 
+         opacity: 1; 
+         }
+          }
+    .footer{
+           background-color: black;
+           color: white;
+         } 
+    button{
+            margin-top: auto;
+         }
+    .resources a{
+        color: orangered;
+         }
+    .resources a:hover {
+        color: darkorange;
+        text-decoration: underline;
+         }
+    .social-icon {
+     font-size: 40px; 
+     margin: 0 10px; 
+     color: black; 
+     transition: color 0.3s; 
+         }
+    .socials-icons {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        }
+    .social-icon:hover {
+     color: green; 
+         }
+    
     </style>
 </head>
 
 <body>
-    <main>
-        <div class="logo">
-            <img src="Alqalam_logo.jpg" alt="Club Logo">
-        </div>
-        <h1 class="club-name">Al-Qalam Developer Club</h1>
-        <p class="note">Join us for coding sessions, workshops, and networking!</p>
-        
+  <main>
+     <div class="logo">
+        <img src="Alqalam_logo.jpg" alt="Club Logo">
+     </div>
+     <h1 class="club-name">Al-Qalam Developer Club</h1>
+     <p class="note">Join us for coding sessions, workshops, and networking!</p>
 
+     <div class="sections-container">
         <section class="intro">
             <h2>About Us</h2>
-            <p class="para">We are dedicated to fostering a community of developers at our university, where knowledge sharing and collaboration are key.</p>
-            <input type="button" class="button" value="More About Us">
+            <p class="para">  Welcome to the Al-Qalam Developer Club! We are a vibrant community of passionate developers dedicated to advancing our skills and knowledge in the ever-evolving tech landscape. Our club is based at Al-Qalam University, where we strive to create an inclusive environment that fosters learning, collaboration, and creativity.</p>
+            <input type="button" class="button" value="More About Us" onclick="window.location.href='about_us.html';" >
         </section>
 
         <section class="events">
             <h2>Upcoming Events</h2>
             <ul class="para">
-                <li><strong>Hackathon:</strong> March 10, 2023 | 10 AM - 6 PM | Main Hall</li>
-                <li><strong>Workshop:</strong> March 15, 2023 | 2 PM - 4 PM | Lab 101</li>
-                <li><strong>Networking Event:</strong> March 20, 2023 | 5 PM - 7 PM | Student Lounge</li>
+                <li><strong>Hackathon:</strong> March 10, 2024 | 10 AM - 6 PM | Muhammad Sanusi 2 ICT</li>
+                <li> ------------</li>
+                <li><strong>Workshop:</strong> March 15, 2024 | 2 PM - 4 PM | Auditorium Upstairs</li>
+                <li> ------------</li>
+                <li><strong>Networking:</strong> March 20, 2024 | 5 PM - 7 PM | Ado Garji  Multi-purpose Hall</li>
             </ul>
+            <input type="button" class="button" value="Secure a sit" onclick="window.location.href='events.html'">
         </section>
 
         <section class="projects">
             <h2>Current Projects</h2>
             <p class="para">Explore our exciting projects:</p>
             <ul class="para">
-                <li>Project A: A web-based application for XYZ.</li>
-                <li>Project B: A mobile app for ABC.</li>
-                <li>Project C: A collaborative tool for developers.</li>
+                <li>Project 1:-  A web-based application for Student Feedback.</li>
+                <li>------------</li>
+                <li>Project 2:-  A mobile app for Campus Navigation.</li>
+                <li>------------</li>
+                <li>Project 3:- A collaborative tool for developers.</li>
             </ul>
+            <input type="button" class="button" value="See More" onclick="window.location.href='projects.html'">
         </section>
 
         <section class="resources">
@@ -157,29 +228,36 @@
                 <li><a href="#">JavaScript Basics</a></li>
                 <li><a href="#">Git & GitHub Guide</a></li>
             </ul>
+            <input type="button" class="button" value="See More">
         </section>
 
         <section class="members">
             <h2>Become a Member</h2>
             <p class="para">Join the community to enhance your skills and network.</p>
-            <input type="button" class="button" value="Sing Up">
+            <input type="button" class="button" value="Sign Up" onclick="window.location.href='sign_up.html'">
         </section>
 
-        <section class="gallery">
-            <h2>Gallery</h2>
-            <p class="para">Photos from our past events:</p>
-            
-            <div>
-                <img src="gallery_image_1.jpg" alt="Event 1" width="100">
-                <img src="gallery_image_2.jpg" alt="Event 2" width="100">
-                <img src="gallery_image_3.jpg" alt="Event 3" width="100">
+        <section class="login">
+            <h2>Member Login</h2>
+            <p class="para">Already a member?</p>
+            <input type="button" class="button" value="Login" onclick="window.location.href='log_in.html'">
+        </section>    
+
+        <section class="socials">
+            <h2>Follow Us</h2>
+            <p class="para">Stay connected with us on social media:</p>
+            <div class="socials-icons">
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>           
             </div>
         </section>
+
+     </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Developer Club. All rights reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2024 Developer Club. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
-</body>
-
-</html>
+</body>    
